@@ -3,10 +3,10 @@
 namespace TomKriek\CopernicaAPI\Endpoints;
 
 /**
- * Class Database
+ * Class Collection
  * @package TomKriek\CopernicaAPI\Endpoints
  */
-class Identity extends AbstractEndpoint
+class Interest extends AbstractEndpoint
 {
 
 }
