@@ -43,7 +43,7 @@ class CopernicaAPI
 {
 
     /* @var string API_GATEWAY */
-    private const API_GATEWAY = 'https://api.copernica.com';
+    const API_GATEWAY = 'https://api.copernica.com';
 
     /* @var string $token */
     private $token;
