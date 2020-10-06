@@ -135,7 +135,7 @@ class CopernicaAPI
     /**
      * @param string $name
      */
-    public function setEndpoint($name): void
+    public function setEndpoint($name)
     {
         $this->endpoint = $name;
     }
@@ -145,7 +145,7 @@ class CopernicaAPI
      *
      * @param array $params
      */
-    public function setParams(array $params): void
+    public function setParams(array $params)
     {
         $this->params = $params;
     }
@@ -154,7 +154,7 @@ class CopernicaAPI
      * @param int $limit
      * @return CopernicaAPI
      */
-    public function limit($limit = null): CopernicaAPI
+    public function limit($limit = null)
     {
         $this->limit = $limit;
 
@@ -165,7 +165,7 @@ class CopernicaAPI
      * @param int $start
      * @return CopernicaAPI
      */
-    public function start(int $start): CopernicaAPI
+    public function start(int $start)
     {
         $this->start = $start;
 
@@ -176,7 +176,7 @@ class CopernicaAPI
      * @param bool $total
      * @return CopernicaAPI
      */
-    public function total($total = true): CopernicaAPI
+    public function total($total = true)
     {
         $this->total = $total;
 
@@ -188,7 +188,7 @@ class CopernicaAPI
      *
      * @return string
      */
-    public function buildQuery(): string
+    public function buildQuery()
     {
         $parts = [];
 
@@ -216,7 +216,7 @@ class CopernicaAPI
     /**
      * @return array
      */
-    public function getParams(): array
+    public function getParams()
     {
         if (null === $this->params) {
             return [];
@@ -228,7 +228,7 @@ class CopernicaAPI
     /**
      * @return string
      */
-    public function getEndpoint(): string
+    public function getEndpoint()
     {
         return $this->endpoint;
     }
@@ -236,7 +236,7 @@ class CopernicaAPI
     /**
      * @param string $extra
      */
-    public function setExtra($extra): void
+    public function setExtra($extra)
     {
         $this->extra = $extra;
     }
@@ -244,7 +244,7 @@ class CopernicaAPI
     /**
      * @return string
      */
-    public function getExtra(): string
+    public function getExtra()
     {
         return $this->extra;
     }
@@ -265,7 +265,7 @@ class CopernicaAPI
      *
      * @return Uri
      */
-    private function buildURI(): Uri
+    private function buildURI()
     {
         $parts = [
             self::API_GATEWAY,
@@ -357,7 +357,7 @@ class CopernicaAPI
     /**
      * @return array
      */
-    public function getData(): array
+    public function getData()
     {
         if (null === $this->data) {
             return [];
@@ -369,7 +369,7 @@ class CopernicaAPI
     /**
      * @param array $data
      */
-    public function setData(array $data): void
+    public function setData(array $data)
     {
         $this->data = $data;
     }
