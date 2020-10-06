@@ -78,7 +78,7 @@ class CopernicaAPI
     /* @var int $start */
     private $start;
 
-    public function __construct(string $token, string $version = 'v1', bool $debug = false)
+    public function __construct($token, $version = 'v1', $debug = false)
     {
         $this->version = $version;
 
@@ -176,7 +176,7 @@ class CopernicaAPI
      * @param bool $total
      * @return CopernicaAPI
      */
-    public function total(bool $total = true): CopernicaAPI
+    public function total($total = true): CopernicaAPI
     {
         $this->total = $total;
 
