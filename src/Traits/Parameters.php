@@ -11,7 +11,7 @@ trait Parameters
      * @param int $limit
      * @return CopernicaAPI
      */
-    public function limit($limit = null): CopernicaAPI
+    public function limit($limit = null)
     {
         /* @var CopernicaAPI $api */
         $api = $this->api;
@@ -25,7 +25,7 @@ trait Parameters
      * @param int $start
      * @return CopernicaAPI
      */
-    public function start($start = null): CopernicaAPI
+    public function start($start = null)
     {
         /* @var CopernicaAPI $api */
         $api = $this->api;
@@ -39,7 +39,7 @@ trait Parameters
      * @param bool $total
      * @return CopernicaAPI
      */
-    public function total($total = true): CopernicaAPI
+    public function total($total = true)
     {
         /* @var CopernicaAPI $api */
         $api = $this->api;
