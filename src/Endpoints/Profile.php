@@ -13,7 +13,7 @@ use TomKriek\CopernicaAPI\CopernicaAPI;
  * @method CopernicaAPI subprofiles($collection_id)
  * @method CopernicaAPI events(array $parameters = [])
  */
-class Profile
+class Profile extends AbstractEndpoint
 {
 
 }
